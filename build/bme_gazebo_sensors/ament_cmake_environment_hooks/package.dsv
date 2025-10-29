@@ -1,0 +1,4 @@
+source;share/bme_gazebo_sensors/local_setup.bash
+source;share/bme_gazebo_sensors/local_setup.dsv
+source;share/bme_gazebo_sensors/local_setup.sh
+source;share/bme_gazebo_sensors/local_setup.zsh

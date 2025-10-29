@@ -1,0 +1,4 @@
+source;share/erl1/local_setup.bash
+source;share/erl1/local_setup.dsv
+source;share/erl1/local_setup.sh
+source;share/erl1/local_setup.zsh
