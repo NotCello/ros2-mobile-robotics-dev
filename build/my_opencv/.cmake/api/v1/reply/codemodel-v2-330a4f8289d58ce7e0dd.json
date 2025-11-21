@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-f067b7978f3251663cbe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "my_opencv",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "image_subscriber::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-image_subscriber-26ea73a2491e4a98228f.json",
+					"name" : "image_subscriber",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "it_modifier::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-it_modifier-ce21691b62ee1f211ecd.json",
+					"name" : "it_modifier",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "it_subscriber::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-it_subscriber-b28a37ddcd0c439fd6b2.json",
+					"name" : "it_subscriber",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_opencv_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_opencv_uninstall-db36a5fc4edc8bc9985a.json",
+					"name" : "my_opencv_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-9290145b195b393d4d79.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/my_opencv",
+		"source" : "/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/my_opencv"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -1,0 +1,8 @@
+{
+  "package_name": "aruco_opencv_msgs",
+  "non_idl_tuples": [
+    "/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/ros_aruco_opencv/aruco_opencv_msgs:msg/ArucoDetection.msg",
+    "/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/ros_aruco_opencv/aruco_opencv_msgs:msg/BoardPose.msg",
+    "/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/ros_aruco_opencv/aruco_opencv_msgs:msg/MarkerPose.msg"
+  ]
+}

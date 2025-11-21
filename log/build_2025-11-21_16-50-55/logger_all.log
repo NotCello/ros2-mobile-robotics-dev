@@ -1,0 +1,495 @@
+[0.339s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.339s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7a3f654b8200>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7a3f65493da0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7a3f65493da0>>, mixin_verb=('build',))
+[0.433s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.433s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.433s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.433s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.433s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.433s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.433s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(ros_aruco_opencv) by extensions ['ignore', 'ignore_ament_install']
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(ros_aruco_opencv) by extension 'ignore'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(ros_aruco_opencv) by extension 'ignore_ament_install'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(ros_aruco_opencv) by extensions ['colcon_pkg']
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(ros_aruco_opencv) by extension 'colcon_pkg'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(ros_aruco_opencv) by extensions ['colcon_meta']
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(ros_aruco_opencv) by extension 'colcon_meta'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(ros_aruco_opencv) by extensions ['ros']
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(ros_aruco_opencv) by extension 'ros'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(ros_aruco_opencv) by extensions ['cmake', 'python']
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(ros_aruco_opencv) by extension 'cmake'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(ros_aruco_opencv) by extension 'python'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(ros_aruco_opencv) by extensions ['python_setup_py']
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(ros_aruco_opencv) by extension 'python_setup_py'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(ros_aruco_opencv/aruco_opencv) by extensions ['ignore', 'ignore_ament_install']
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(ros_aruco_opencv/aruco_opencv) by extension 'ignore'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(ros_aruco_opencv/aruco_opencv) by extension 'ignore_ament_install'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(ros_aruco_opencv/aruco_opencv) by extensions ['colcon_pkg']
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(ros_aruco_opencv/aruco_opencv) by extension 'colcon_pkg'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(ros_aruco_opencv/aruco_opencv) by extensions ['colcon_meta']
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(ros_aruco_opencv/aruco_opencv) by extension 'colcon_meta'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(ros_aruco_opencv/aruco_opencv) by extensions ['ros']
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(ros_aruco_opencv/aruco_opencv) by extension 'ros'
+[0.476s] DEBUG:colcon.colcon_core.package_identification:Package 'ros_aruco_opencv/aruco_opencv' with type 'ros.ament_cmake' and name 'aruco_opencv'
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(ros_aruco_opencv/aruco_opencv_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(ros_aruco_opencv/aruco_opencv_msgs) by extension 'ignore'
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(ros_aruco_opencv/aruco_opencv_msgs) by extension 'ignore_ament_install'
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(ros_aruco_opencv/aruco_opencv_msgs) by extensions ['colcon_pkg']
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(ros_aruco_opencv/aruco_opencv_msgs) by extension 'colcon_pkg'
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(ros_aruco_opencv/aruco_opencv_msgs) by extensions ['colcon_meta']
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(ros_aruco_opencv/aruco_opencv_msgs) by extension 'colcon_meta'
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(ros_aruco_opencv/aruco_opencv_msgs) by extensions ['ros']
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(ros_aruco_opencv/aruco_opencv_msgs) by extension 'ros'
+[0.478s] DEBUG:colcon.colcon_core.package_identification:Package 'ros_aruco_opencv/aruco_opencv_msgs' with type 'ros.ament_cmake' and name 'aruco_opencv_msgs'
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/brain) by extensions ['ignore', 'ignore_ament_install']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/brain) by extension 'ignore'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/brain) by extension 'ignore_ament_install'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/brain) by extensions ['colcon_pkg']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/brain) by extension 'colcon_pkg'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/brain) by extensions ['colcon_meta']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/brain) by extension 'colcon_meta'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/brain) by extensions ['ros']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/brain) by extension 'ros'
+[0.480s] DEBUG:colcon.colcon_core.package_identification:Package 'src/brain' with type 'ros.ament_python' and name 'brain'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/erl1) by extensions ['ignore', 'ignore_ament_install']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/erl1) by extension 'ignore'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/erl1) by extension 'ignore_ament_install'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/erl1) by extensions ['colcon_pkg']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/erl1) by extension 'colcon_pkg'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/erl1) by extensions ['colcon_meta']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/erl1) by extension 'colcon_meta'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/erl1) by extensions ['ros']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/erl1) by extension 'ros'
+[0.481s] DEBUG:colcon.colcon_core.package_identification:Package 'src/erl1' with type 'ros.ament_cmake' and name 'erl1'
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/erl1_sensors) by extensions ['ignore', 'ignore_ament_install']
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/erl1_sensors) by extension 'ignore'
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/erl1_sensors) by extension 'ignore_ament_install'
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/erl1_sensors) by extensions ['colcon_pkg']
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/erl1_sensors) by extension 'colcon_pkg'
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/erl1_sensors) by extensions ['colcon_meta']
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/erl1_sensors) by extension 'colcon_meta'
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/erl1_sensors) by extensions ['ros']
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/erl1_sensors) by extension 'ros'
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/erl1_sensors) by extensions ['cmake', 'python']
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/erl1_sensors) by extension 'cmake'
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/erl1_sensors) by extension 'python'
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/erl1_sensors) by extensions ['python_setup_py']
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/erl1_sensors) by extension 'python_setup_py'
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/erl1_sensors/bme_gazebo_sensors) by extensions ['ignore', 'ignore_ament_install']
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/erl1_sensors/bme_gazebo_sensors) by extension 'ignore'
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/erl1_sensors/bme_gazebo_sensors) by extension 'ignore_ament_install'
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/erl1_sensors/bme_gazebo_sensors) by extensions ['colcon_pkg']
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/erl1_sensors/bme_gazebo_sensors) by extension 'colcon_pkg'
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/erl1_sensors/bme_gazebo_sensors) by extensions ['colcon_meta']
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/erl1_sensors/bme_gazebo_sensors) by extension 'colcon_meta'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/erl1_sensors/bme_gazebo_sensors) by extensions ['ros']
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/erl1_sensors/bme_gazebo_sensors) by extension 'ros'
+[0.482s] DEBUG:colcon.colcon_core.package_identification:Package 'src/erl1_sensors/bme_gazebo_sensors' with type 'ros.ament_cmake' and name 'bme_gazebo_sensors'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_opencv) by extensions ['ignore', 'ignore_ament_install']
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_opencv) by extension 'ignore'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_opencv) by extension 'ignore_ament_install'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_opencv) by extensions ['colcon_pkg']
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_opencv) by extension 'colcon_pkg'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_opencv) by extensions ['colcon_meta']
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_opencv) by extension 'colcon_meta'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_opencv) by extensions ['ros']
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_opencv) by extension 'ros'
+[0.483s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_opencv' with type 'ros.ament_cmake' and name 'my_opencv'
+[0.483s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.483s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.483s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.483s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.483s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.513s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.513s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.517s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install
+[0.518s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 321 installed packages in /opt/ros/jazzy
+[0.520s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.564s] Level 5:colcon.colcon_core.verb:set package 'aruco_opencv_msgs' build argument 'cmake_args' from command line to 'None'
+[0.564s] Level 5:colcon.colcon_core.verb:set package 'aruco_opencv_msgs' build argument 'cmake_target' from command line to 'None'
+[0.564s] Level 5:colcon.colcon_core.verb:set package 'aruco_opencv_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.564s] Level 5:colcon.colcon_core.verb:set package 'aruco_opencv_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.564s] Level 5:colcon.colcon_core.verb:set package 'aruco_opencv_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.564s] Level 5:colcon.colcon_core.verb:set package 'aruco_opencv_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.564s] Level 5:colcon.colcon_core.verb:set package 'aruco_opencv_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.564s] Level 5:colcon.colcon_core.verb:set package 'aruco_opencv_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.564s] Level 5:colcon.colcon_core.verb:set package 'aruco_opencv_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.564s] DEBUG:colcon.colcon_core.verb:Building package 'aruco_opencv_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/aruco_opencv_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs', 'merge_install': False, 'path': '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/ros_aruco_opencv/aruco_opencv_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.564s] Level 5:colcon.colcon_core.verb:set package 'bme_gazebo_sensors' build argument 'cmake_args' from command line to 'None'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'bme_gazebo_sensors' build argument 'cmake_target' from command line to 'None'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'bme_gazebo_sensors' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'bme_gazebo_sensors' build argument 'cmake_clean_cache' from command line to 'False'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'bme_gazebo_sensors' build argument 'cmake_clean_first' from command line to 'False'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'bme_gazebo_sensors' build argument 'cmake_force_configure' from command line to 'False'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'bme_gazebo_sensors' build argument 'ament_cmake_args' from command line to 'None'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'bme_gazebo_sensors' build argument 'catkin_cmake_args' from command line to 'None'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'bme_gazebo_sensors' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.565s] DEBUG:colcon.colcon_core.verb:Building package 'bme_gazebo_sensors' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/bme_gazebo_sensors', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors', 'merge_install': False, 'path': '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/erl1_sensors/bme_gazebo_sensors', 'symlink_install': False, 'test_result_base': None}
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'brain' build argument 'cmake_args' from command line to 'None'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'brain' build argument 'cmake_target' from command line to 'None'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'brain' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'brain' build argument 'cmake_clean_cache' from command line to 'False'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'brain' build argument 'cmake_clean_first' from command line to 'False'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'brain' build argument 'cmake_force_configure' from command line to 'False'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'brain' build argument 'ament_cmake_args' from command line to 'None'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'brain' build argument 'catkin_cmake_args' from command line to 'None'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'brain' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.565s] DEBUG:colcon.colcon_core.verb:Building package 'brain' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/brain', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain', 'merge_install': False, 'path': '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain', 'symlink_install': False, 'test_result_base': None}
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'erl1' build argument 'cmake_args' from command line to 'None'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'erl1' build argument 'cmake_target' from command line to 'None'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'erl1' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'erl1' build argument 'cmake_clean_cache' from command line to 'False'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'erl1' build argument 'cmake_clean_first' from command line to 'False'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'erl1' build argument 'cmake_force_configure' from command line to 'False'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'erl1' build argument 'ament_cmake_args' from command line to 'None'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'erl1' build argument 'catkin_cmake_args' from command line to 'None'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'erl1' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.565s] DEBUG:colcon.colcon_core.verb:Building package 'erl1' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/erl1', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1', 'merge_install': False, 'path': '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/erl1', 'symlink_install': False, 'test_result_base': None}
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'my_opencv' build argument 'cmake_args' from command line to 'None'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'my_opencv' build argument 'cmake_target' from command line to 'None'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'my_opencv' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'my_opencv' build argument 'cmake_clean_cache' from command line to 'False'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'my_opencv' build argument 'cmake_clean_first' from command line to 'False'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'my_opencv' build argument 'cmake_force_configure' from command line to 'False'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'my_opencv' build argument 'ament_cmake_args' from command line to 'None'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'my_opencv' build argument 'catkin_cmake_args' from command line to 'None'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'my_opencv' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.566s] DEBUG:colcon.colcon_core.verb:Building package 'my_opencv' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/my_opencv', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv', 'merge_install': False, 'path': '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/my_opencv', 'symlink_install': False, 'test_result_base': None}
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'aruco_opencv' build argument 'cmake_args' from command line to 'None'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'aruco_opencv' build argument 'cmake_target' from command line to 'None'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'aruco_opencv' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'aruco_opencv' build argument 'cmake_clean_cache' from command line to 'False'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'aruco_opencv' build argument 'cmake_clean_first' from command line to 'False'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'aruco_opencv' build argument 'cmake_force_configure' from command line to 'False'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'aruco_opencv' build argument 'ament_cmake_args' from command line to 'None'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'aruco_opencv' build argument 'catkin_cmake_args' from command line to 'None'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'aruco_opencv' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.566s] DEBUG:colcon.colcon_core.verb:Building package 'aruco_opencv' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/aruco_opencv', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv', 'merge_install': False, 'path': '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/ros_aruco_opencv/aruco_opencv', 'symlink_install': False, 'test_result_base': None}
+[0.566s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.567s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.567s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/ros_aruco_opencv/aruco_opencv_msgs' with build type 'ament_cmake'
+[0.568s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/ros_aruco_opencv/aruco_opencv_msgs'
+[0.573s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.573s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.573s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.577s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/erl1_sensors/bme_gazebo_sensors' with build type 'ament_cmake'
+[0.577s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/erl1_sensors/bme_gazebo_sensors'
+[0.577s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.577s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.581s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain' with build type 'ament_python'
+[0.581s] Level 1:colcon.colcon_core.shell:create_environment_hook('brain', 'ament_prefix_path')
+[0.581s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/share/brain/hook/ament_prefix_path.ps1'
+[0.582s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/share/brain/hook/ament_prefix_path.dsv'
+[0.582s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/share/brain/hook/ament_prefix_path.sh'
+[0.583s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.583s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.588s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/erl1' with build type 'ament_cmake'
+[0.589s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/erl1'
+[0.589s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.589s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.594s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/my_opencv' with build type 'ament_cmake'
+[0.594s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/my_opencv'
+[0.594s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.594s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.606s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/aruco_opencv_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/aruco_opencv_msgs -- -j8 -l8
+[0.614s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/bme_gazebo_sensors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/bme_gazebo_sensors -- -j8 -l8
+[0.879s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain'
+[0.880s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.880s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.887s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/erl1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/erl1 -- -j8 -l8
+[0.892s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/bme_gazebo_sensors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/bme_gazebo_sensors -- -j8 -l8
+[0.908s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/bme_gazebo_sensors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/bme_gazebo_sensors
+[0.912s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/my_opencv': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/my_opencv -- -j8 -l8
+[0.925s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bme_gazebo_sensors)
+[0.926s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/bme_gazebo_sensors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/bme_gazebo_sensors
+[0.931s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors' for CMake module files
+[0.932s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors' for CMake config files
+[0.932s] Level 1:colcon.colcon_core.shell:create_environment_hook('bme_gazebo_sensors', 'cmake_prefix_path')
+[0.932s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors/share/bme_gazebo_sensors/hook/cmake_prefix_path.ps1'
+[0.933s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors/share/bme_gazebo_sensors/hook/cmake_prefix_path.dsv'
+[0.933s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors/share/bme_gazebo_sensors/hook/cmake_prefix_path.sh'
+[0.933s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors/bin'
+[0.934s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors/lib/pkgconfig/bme_gazebo_sensors.pc'
+[0.934s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors/lib/python3.12/site-packages'
+[0.934s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors/bin'
+[0.934s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors/share/bme_gazebo_sensors/package.ps1'
+[0.936s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors/share/bme_gazebo_sensors/package.dsv'
+[0.936s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors/share/bme_gazebo_sensors/package.sh'
+[0.937s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors/share/bme_gazebo_sensors/package.bash'
+[0.938s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors/share/bme_gazebo_sensors/package.zsh'
+[0.939s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors/share/colcon-core/packages/bme_gazebo_sensors)
+[0.939s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bme_gazebo_sensors)
+[0.940s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors' for CMake module files
+[0.940s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors' for CMake config files
+[0.940s] Level 1:colcon.colcon_core.shell:create_environment_hook('bme_gazebo_sensors', 'cmake_prefix_path')
+[0.940s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors/share/bme_gazebo_sensors/hook/cmake_prefix_path.ps1'
+[0.941s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors/share/bme_gazebo_sensors/hook/cmake_prefix_path.dsv'
+[0.941s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors/share/bme_gazebo_sensors/hook/cmake_prefix_path.sh'
+[0.942s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors/bin'
+[0.942s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors/lib/pkgconfig/bme_gazebo_sensors.pc'
+[0.942s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors/lib/python3.12/site-packages'
+[0.942s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors/bin'
+[0.942s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors/share/bme_gazebo_sensors/package.ps1'
+[0.943s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors/share/bme_gazebo_sensors/package.dsv'
+[0.943s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors/share/bme_gazebo_sensors/package.sh'
+[0.943s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors/share/bme_gazebo_sensors/package.bash'
+[0.944s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors/share/bme_gazebo_sensors/package.zsh'
+[0.944s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors/share/colcon-core/packages/bme_gazebo_sensors)
+[0.946s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/erl1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/erl1 -- -j8 -l8
+[0.947s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/erl1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/erl1
+[0.960s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(erl1)
+[0.960s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/erl1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/erl1
+[0.960s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1' for CMake module files
+[0.961s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1' for CMake config files
+[0.962s] Level 1:colcon.colcon_core.shell:create_environment_hook('erl1', 'cmake_prefix_path')
+[0.962s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/hook/cmake_prefix_path.ps1'
+[0.963s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/hook/cmake_prefix_path.dsv'
+[0.963s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/hook/cmake_prefix_path.sh'
+[0.964s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/bin'
+[0.964s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/lib/pkgconfig/erl1.pc'
+[0.965s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/lib/python3.12/site-packages'
+[0.965s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/bin'
+[0.965s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/package.ps1'
+[0.966s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/package.dsv'
+[0.967s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/package.sh'
+[0.967s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/package.bash'
+[0.968s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/package.zsh'
+[0.968s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/colcon-core/packages/erl1)
+[0.969s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(erl1)
+[0.969s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1' for CMake module files
+[0.970s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1' for CMake config files
+[0.970s] Level 1:colcon.colcon_core.shell:create_environment_hook('erl1', 'cmake_prefix_path')
+[0.971s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/hook/cmake_prefix_path.ps1'
+[0.971s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/hook/cmake_prefix_path.dsv'
+[0.972s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/hook/cmake_prefix_path.sh'
+[0.972s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/bin'
+[0.972s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/lib/pkgconfig/erl1.pc'
+[0.973s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/lib/python3.12/site-packages'
+[0.974s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/bin'
+[0.974s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/package.ps1'
+[0.975s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/package.dsv'
+[0.976s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/package.sh'
+[0.976s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/package.bash'
+[0.977s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/package.zsh'
+[0.977s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/colcon-core/packages/erl1)
+[1.022s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/my_opencv' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/my_opencv -- -j8 -l8
+[1.024s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/my_opencv': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/my_opencv
+[1.038s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_opencv)
+[1.038s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv' for CMake module files
+[1.039s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/my_opencv' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/my_opencv
+[1.040s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv' for CMake config files
+[1.040s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_opencv', 'cmake_prefix_path')
+[1.040s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/share/my_opencv/hook/cmake_prefix_path.ps1'
+[1.041s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/share/my_opencv/hook/cmake_prefix_path.dsv'
+[1.041s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/share/my_opencv/hook/cmake_prefix_path.sh'
+[1.042s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/lib'
+[1.042s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/bin'
+[1.042s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/lib/pkgconfig/my_opencv.pc'
+[1.043s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/lib/python3.12/site-packages'
+[1.043s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/bin'
+[1.044s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/share/my_opencv/package.ps1'
+[1.044s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/share/my_opencv/package.dsv'
+[1.045s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/share/my_opencv/package.sh'
+[1.045s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/share/my_opencv/package.bash'
+[1.046s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/share/my_opencv/package.zsh'
+[1.046s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/share/colcon-core/packages/my_opencv)
+[1.047s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_opencv)
+[1.047s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv' for CMake module files
+[1.048s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv' for CMake config files
+[1.048s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_opencv', 'cmake_prefix_path')
+[1.048s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/share/my_opencv/hook/cmake_prefix_path.ps1'
+[1.049s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/share/my_opencv/hook/cmake_prefix_path.dsv'
+[1.049s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/share/my_opencv/hook/cmake_prefix_path.sh'
+[1.050s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/lib'
+[1.050s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/bin'
+[1.050s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/lib/pkgconfig/my_opencv.pc'
+[1.050s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/lib/python3.12/site-packages'
+[1.051s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/bin'
+[1.051s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/share/my_opencv/package.ps1'
+[1.052s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/share/my_opencv/package.dsv'
+[1.052s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/share/my_opencv/package.sh'
+[1.053s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/share/my_opencv/package.bash'
+[1.053s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/share/my_opencv/package.zsh'
+[1.054s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/share/colcon-core/packages/my_opencv)
+[1.139s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/aruco_opencv_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/aruco_opencv_msgs -- -j8 -l8
+[1.141s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/aruco_opencv_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/aruco_opencv_msgs
+[1.213s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(aruco_opencv_msgs)
+[1.214s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/aruco_opencv_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/aruco_opencv_msgs
+[1.214s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs' for CMake module files
+[1.215s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs' for CMake config files
+[1.215s] Level 1:colcon.colcon_core.shell:create_environment_hook('aruco_opencv_msgs', 'cmake_prefix_path')
+[1.216s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/hook/cmake_prefix_path.ps1'
+[1.216s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/hook/cmake_prefix_path.dsv'
+[1.216s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/hook/cmake_prefix_path.sh'
+[1.217s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib'
+[1.217s] Level 1:colcon.colcon_core.shell:create_environment_hook('aruco_opencv_msgs', 'ld_library_path_lib')
+[1.217s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/hook/ld_library_path_lib.ps1'
+[1.217s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/hook/ld_library_path_lib.dsv'
+[1.218s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/hook/ld_library_path_lib.sh'
+[1.218s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/bin'
+[1.218s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/pkgconfig/aruco_opencv_msgs.pc'
+[1.218s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages'
+[1.218s] Level 1:colcon.colcon_core.shell:create_environment_hook('aruco_opencv_msgs', 'pythonpath')
+[1.219s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/hook/pythonpath.ps1'
+[1.219s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/hook/pythonpath.dsv'
+[1.219s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/hook/pythonpath.sh'
+[1.220s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/bin'
+[1.220s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/package.ps1'
+[1.220s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/package.dsv'
+[1.221s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/package.sh'
+[1.221s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/package.bash'
+[1.221s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/package.zsh'
+[1.222s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/colcon-core/packages/aruco_opencv_msgs)
+[1.222s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(aruco_opencv_msgs)
+[1.222s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs' for CMake module files
+[1.223s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs' for CMake config files
+[1.223s] Level 1:colcon.colcon_core.shell:create_environment_hook('aruco_opencv_msgs', 'cmake_prefix_path')
+[1.223s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/hook/cmake_prefix_path.ps1'
+[1.224s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/hook/cmake_prefix_path.dsv'
+[1.224s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/hook/cmake_prefix_path.sh'
+[1.224s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib'
+[1.224s] Level 1:colcon.colcon_core.shell:create_environment_hook('aruco_opencv_msgs', 'ld_library_path_lib')
+[1.224s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/hook/ld_library_path_lib.ps1'
+[1.225s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/hook/ld_library_path_lib.dsv'
+[1.225s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/hook/ld_library_path_lib.sh'
+[1.225s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/bin'
+[1.225s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/pkgconfig/aruco_opencv_msgs.pc'
+[1.226s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages'
+[1.226s] Level 1:colcon.colcon_core.shell:create_environment_hook('aruco_opencv_msgs', 'pythonpath')
+[1.226s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/hook/pythonpath.ps1'
+[1.226s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/hook/pythonpath.dsv'
+[1.226s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/hook/pythonpath.sh'
+[1.227s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/bin'
+[1.227s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/package.ps1'
+[1.228s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/package.dsv'
+[1.228s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/package.sh'
+[1.229s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/package.bash'
+[1.229s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/package.zsh'
+[1.229s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/colcon-core/packages/aruco_opencv_msgs)
+[1.230s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/ros_aruco_opencv/aruco_opencv' with build type 'ament_cmake'
+[1.230s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/ros_aruco_opencv/aruco_opencv'
+[1.230s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.230s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.242s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/aruco_opencv': CMAKE_PREFIX_PATH=/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/aruco_opencv -- -j8 -l8
+[1.356s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/aruco_opencv' returned '0': CMAKE_PREFIX_PATH=/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/aruco_opencv -- -j8 -l8
+[1.358s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/aruco_opencv': CMAKE_PREFIX_PATH=/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/aruco_opencv
+[1.378s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(aruco_opencv)
+[1.378s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv' for CMake module files
+[1.378s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/aruco_opencv' returned '0': CMAKE_PREFIX_PATH=/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/aruco_opencv
+[1.379s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv' for CMake config files
+[1.379s] Level 1:colcon.colcon_core.shell:create_environment_hook('aruco_opencv', 'cmake_prefix_path')
+[1.379s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/share/aruco_opencv/hook/cmake_prefix_path.ps1'
+[1.380s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/share/aruco_opencv/hook/cmake_prefix_path.dsv'
+[1.380s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/share/aruco_opencv/hook/cmake_prefix_path.sh'
+[1.381s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/lib'
+[1.381s] Level 1:colcon.colcon_core.shell:create_environment_hook('aruco_opencv', 'ld_library_path_lib')
+[1.381s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/share/aruco_opencv/hook/ld_library_path_lib.ps1'
+[1.381s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/share/aruco_opencv/hook/ld_library_path_lib.dsv'
+[1.382s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/share/aruco_opencv/hook/ld_library_path_lib.sh'
+[1.382s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/bin'
+[1.382s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/lib/pkgconfig/aruco_opencv.pc'
+[1.382s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/lib/python3.12/site-packages'
+[1.383s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/bin'
+[1.383s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/share/aruco_opencv/package.ps1'
+[1.384s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/share/aruco_opencv/package.dsv'
+[1.384s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/share/aruco_opencv/package.sh'
+[1.385s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/share/aruco_opencv/package.bash'
+[1.385s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/share/aruco_opencv/package.zsh'
+[1.385s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/share/colcon-core/packages/aruco_opencv)
+[1.386s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(aruco_opencv)
+[1.386s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv' for CMake module files
+[1.386s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv' for CMake config files
+[1.386s] Level 1:colcon.colcon_core.shell:create_environment_hook('aruco_opencv', 'cmake_prefix_path')
+[1.387s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/share/aruco_opencv/hook/cmake_prefix_path.ps1'
+[1.387s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/share/aruco_opencv/hook/cmake_prefix_path.dsv'
+[1.387s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/share/aruco_opencv/hook/cmake_prefix_path.sh'
+[1.388s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/lib'
+[1.388s] Level 1:colcon.colcon_core.shell:create_environment_hook('aruco_opencv', 'ld_library_path_lib')
+[1.388s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/share/aruco_opencv/hook/ld_library_path_lib.ps1'
+[1.389s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/share/aruco_opencv/hook/ld_library_path_lib.dsv'
+[1.389s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/share/aruco_opencv/hook/ld_library_path_lib.sh'
+[1.389s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/bin'
+[1.389s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/lib/pkgconfig/aruco_opencv.pc'
+[1.389s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/lib/python3.12/site-packages'
+[1.390s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/bin'
+[1.390s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/share/aruco_opencv/package.ps1'
+[1.390s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/share/aruco_opencv/package.dsv'
+[1.391s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/share/aruco_opencv/package.sh'
+[1.391s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/share/aruco_opencv/package.bash'
+[1.392s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/share/aruco_opencv/package.zsh'
+[1.392s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv/share/colcon-core/packages/aruco_opencv)
+[1.708s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/brain/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/brain build --build-base /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/brain/build install --record /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/brain/install.log --single-version-externally-managed install_data
+[2.295s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain' for CMake module files
+[2.295s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/brain/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/brain build --build-base /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/brain/build install --record /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/brain/install.log --single-version-externally-managed install_data
+[2.296s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain' for CMake config files
+[2.296s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/lib'
+[2.296s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/bin'
+[2.296s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/lib/pkgconfig/brain.pc'
+[2.297s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/lib/python3.12/site-packages'
+[2.297s] Level 1:colcon.colcon_core.shell:create_environment_hook('brain', 'pythonpath')
+[2.297s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/share/brain/hook/pythonpath.ps1'
+[2.297s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/share/brain/hook/pythonpath.dsv'
+[2.298s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/share/brain/hook/pythonpath.sh'
+[2.298s] Level 1:colcon.colcon_core.environment:checking '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/bin'
+[2.298s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(brain)
+[2.298s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/share/brain/package.ps1'
+[2.299s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/share/brain/package.dsv'
+[2.299s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/share/brain/package.sh'
+[2.300s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/share/brain/package.bash'
+[2.300s] INFO:colcon.colcon_core.shell:Creating package script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/share/brain/package.zsh'
+[2.300s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/share/colcon-core/packages/brain)
+[2.300s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.301s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.301s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.301s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.311s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.311s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.311s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.335s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.335s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/local_setup.ps1'
+[2.336s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/_local_setup_util_ps1.py'
+[2.338s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/setup.ps1'
+[2.339s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/local_setup.sh'
+[2.340s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/_local_setup_util_sh.py'
+[2.340s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/setup.sh'
+[2.342s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/local_setup.bash'
+[2.342s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/setup.bash'
+[2.344s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/local_setup.zsh'
+[2.344s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/setup.zsh'

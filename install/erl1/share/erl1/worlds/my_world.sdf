@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <sdf version='1.10'>
   <world name='empty'>
     <physics name='1ms' type='ignored'>
@@ -12,21 +11,15 @@
     <plugin name='gz::sim::systems::Contact' filename='gz-sim-contact-system'/>
     <plugin name='gz::sim::systems::Sensors' filename='gz-sim-sensors-system'/>
     <plugin name='gz::sim::systems::Imu' filename='gz-sim-imu-system'/>
-    <plugin
-      filename="gz-sim-navsat-system"
-      name="gz::sim::systems::NavSat">
-    </plugin>
-    <!-- Set the coordinates for the world origin -->
+    <plugin name='gz::sim::systems::NavSat' filename='gz-sim-navsat-system'/>
     <spherical_coordinates>
       <surface_model>EARTH_WGS84</surface_model>
       <world_frame_orientation>ENU</world_frame_orientation>
-      <latitude_deg>44.403373</latitude_deg>
-      <longitude_deg>8.9481068</longitude_deg>
+      <latitude_deg>44.403373000000002</latitude_deg>
+      <longitude_deg>8.9481067999999997</longitude_deg>
       <elevation>0</elevation>
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
-
-
     <gravity>0 0 -9.8000000000000007</gravity>
     <magnetic_field>5.5644999999999998e-06 2.2875799999999999e-05 -4.2388400000000002e-05</magnetic_field>
     <atmosphere type='adiabatic'/>
@@ -108,6 +101,11 @@
       <uri>file:///home/utente/gazebo_models/rescue_randy</uri>
       <name>rescue_randy</name>
       <pose>1.5776795095953009 3.6022001529965531 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///home/utente/gazebo_models/red_ball_10in</uri>
+      <name>red_ball_10in</name>
+      <pose>2.1253383405629087 -1.4911213403229726 0.12699999990200145 0 0 0</pose>
     </include>
     <light name='sun' type='directional'>
       <pose>0 0 10 0 0 0</pose>

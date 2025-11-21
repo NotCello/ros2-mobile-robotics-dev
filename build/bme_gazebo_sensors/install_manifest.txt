@@ -5,6 +5,8 @@
 /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors/share/bme_gazebo_sensors/worlds/empty.sdf
 /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors/share/bme_gazebo_sensors/worlds/my_world.sdf
 /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors/share/bme_gazebo_sensors/worlds/world.sdf
+/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors/share/bme_gazebo_sensors/worlds/asd.sdf
+/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors/share/bme_gazebo_sensors/worlds/try.sdf
 /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors/share/bme_gazebo_sensors/rviz/gps.rviz
 /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors/share/bme_gazebo_sensors/rviz/urdf.rviz
 /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/bme_gazebo_sensors/share/bme_gazebo_sensors/rviz/rviz.rviz

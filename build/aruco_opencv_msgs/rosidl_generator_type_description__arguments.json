@@ -1,0 +1,14 @@
+{
+  "package_name": "aruco_opencv_msgs",
+  "output_dir": "/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/aruco_opencv_msgs/rosidl_generator_type_description/aruco_opencv_msgs",
+  "idl_tuples": [
+    "/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/aruco_opencv_msgs/rosidl_adapter/aruco_opencv_msgs:msg/ArucoDetection.idl",
+    "/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/aruco_opencv_msgs/rosidl_adapter/aruco_opencv_msgs:msg/BoardPose.idl",
+    "/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/aruco_opencv_msgs/rosidl_adapter/aruco_opencv_msgs:msg/MarkerPose.idl"
+  ],
+  "include_paths": [
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "geometry_msgs:/opt/ros/jazzy/share/geometry_msgs"
+  ]
+}
