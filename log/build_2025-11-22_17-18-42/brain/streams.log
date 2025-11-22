@@ -1,0 +1,38 @@
+[1.235s] Invoking command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/brain/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/brain build --build-base /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/brain/build install --record /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/brain/install.log --single-version-externally-managed install_data
+[1.688s] running egg_info
+[1.688s] creating ../../build/brain/brain.egg-info
+[1.716s] writing ../../build/brain/brain.egg-info/PKG-INFO
+[1.717s] writing dependency_links to ../../build/brain/brain.egg-info/dependency_links.txt
+[1.717s] writing entry points to ../../build/brain/brain.egg-info/entry_points.txt
+[1.717s] writing requirements to ../../build/brain/brain.egg-info/requires.txt
+[1.717s] writing top-level names to ../../build/brain/brain.egg-info/top_level.txt
+[1.718s] writing manifest file '../../build/brain/brain.egg-info/SOURCES.txt'
+[1.772s] reading manifest file '../../build/brain/brain.egg-info/SOURCES.txt'
+[1.773s] writing manifest file '../../build/brain/brain.egg-info/SOURCES.txt'
+[1.773s] running build
+[1.774s] running build_py
+[1.774s] creating /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/brain/build
+[1.774s] creating /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/brain/build/lib
+[1.774s] creating /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/brain/build/lib/brain
+[1.774s] copying brain/logic_controller.py -> /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/brain/build/lib/brain
+[1.774s] copying brain/__init__.py -> /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/brain/build/lib/brain
+[1.775s] running install
+[1.784s] running install_lib
+[1.811s] creating /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/lib/python3.12/site-packages/brain
+[1.811s] copying /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/brain/build/lib/brain/logic_controller.py -> /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/lib/python3.12/site-packages/brain
+[1.811s] copying /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/brain/build/lib/brain/__init__.py -> /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/lib/python3.12/site-packages/brain
+[1.812s] byte-compiling /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/lib/python3.12/site-packages/brain/logic_controller.py to logic_controller.cpython-312.pyc
+[1.815s] byte-compiling /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/lib/python3.12/site-packages/brain/__init__.py to __init__.cpython-312.pyc
+[1.815s] running install_data
+[1.815s] creating /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/share/ament_index
+[1.815s] creating /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/share/ament_index/resource_index
+[1.816s] creating /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/share/ament_index/resource_index/packages
+[1.816s] copying resource/brain -> /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/share/ament_index/resource_index/packages
+[1.816s] copying package.xml -> /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/share/brain
+[1.816s] creating /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/share/brain/launch
+[1.816s] running install_egg_info
+[1.847s] Copying ../../build/brain/brain.egg-info to /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/lib/python3.12/site-packages/brain-0.0.0-py3.12.egg-info
+[1.848s] running install_scripts
+[2.067s] Installing logic_node script to /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/lib/brain
+[2.067s] writing list of installed files to '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/brain/install.log'
+[2.108s] Invoked command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/brain/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/brain build --build-base /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/brain/build install --record /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/brain/install.log --single-version-externally-managed install_data

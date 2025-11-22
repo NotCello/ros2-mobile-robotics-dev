@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "aruco_opencv_msgs/msg/detail/marker_pose__struct.h"
-#include "aruco_opencv_msgs/msg/detail/marker_pose__type_support.h"
-#include "aruco_opencv_msgs/msg/detail/marker_pose__functions.h"
 #include "rosidl_typesupport_interface/macros.h"
+#include "aruco_opencv_msgs/msg/detail/marker_pose__type_support.h"
+#include "aruco_opencv_msgs/msg/detail/marker_pose__struct.h"
+#include "aruco_opencv_msgs/msg/detail/marker_pose__functions.h"
 
 #ifdef __cplusplus
 extern "C"

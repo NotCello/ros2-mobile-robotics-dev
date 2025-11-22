@@ -1,0 +1,292 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+-- Found PythonExtra: /usr/bin/python3  
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'lint_cmake' to check CMake code style
+-- Configuring done (4.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/aruco_opencv_msgs
+[  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[  1%] Built target ament_cmake_python_copy_aruco_opencv_msgs
+[  1%] Built target aruco_opencv_msgs__rosidl_generator_type_description
+[  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+running egg_info
+creating aruco_opencv_msgs.egg-info
+writing aruco_opencv_msgs.egg-info/PKG-INFO
+writing dependency_links to aruco_opencv_msgs.egg-info/dependency_links.txt
+writing top-level names to aruco_opencv_msgs.egg-info/top_level.txt
+writing manifest file 'aruco_opencv_msgs.egg-info/SOURCES.txt'
+reading manifest file 'aruco_opencv_msgs.egg-info/SOURCES.txt'
+writing manifest file 'aruco_opencv_msgs.egg-info/SOURCES.txt'
+[  5%] Built target ament_cmake_python_build_aruco_opencv_msgs_egg
+[  5%] Built target aruco_opencv_msgs__cpp
+[  7%] [32mBuilding C object CMakeFiles/aruco_opencv_msgs__rosidl_generator_c.dir/rosidl_generator_c/aruco_opencv_msgs/msg/detail/aruco_detection__description.c.o[0m
+[ 11%] [32mBuilding C object CMakeFiles/aruco_opencv_msgs__rosidl_generator_c.dir/rosidl_generator_c/aruco_opencv_msgs/msg/detail/aruco_detection__type_support.c.o[0m
+[ 11%] [32mBuilding C object CMakeFiles/aruco_opencv_msgs__rosidl_generator_c.dir/rosidl_generator_c/aruco_opencv_msgs/msg/detail/board_pose__description.c.o[0m
+[ 12%] [32mBuilding C object CMakeFiles/aruco_opencv_msgs__rosidl_generator_c.dir/rosidl_generator_c/aruco_opencv_msgs/msg/detail/aruco_detection__functions.c.o[0m
+[ 14%] [32mBuilding C object CMakeFiles/aruco_opencv_msgs__rosidl_generator_c.dir/rosidl_generator_c/aruco_opencv_msgs/msg/detail/board_pose__type_support.c.o[0m
+[ 18%] [32mBuilding C object CMakeFiles/aruco_opencv_msgs__rosidl_generator_c.dir/rosidl_generator_c/aruco_opencv_msgs/msg/detail/marker_pose__description.c.o[0m
+[ 20%] [32mBuilding C object CMakeFiles/aruco_opencv_msgs__rosidl_generator_c.dir/rosidl_generator_c/aruco_opencv_msgs/msg/detail/marker_pose__functions.c.o[0m
+[ 20%] [32mBuilding C object CMakeFiles/aruco_opencv_msgs__rosidl_generator_c.dir/rosidl_generator_c/aruco_opencv_msgs/msg/detail/board_pose__functions.c.o[0m
+[ 22%] [32mBuilding C object CMakeFiles/aruco_opencv_msgs__rosidl_generator_c.dir/rosidl_generator_c/aruco_opencv_msgs/msg/detail/marker_pose__type_support.c.o[0m
+[ 24%] [32m[1mLinking C shared library libaruco_opencv_msgs__rosidl_generator_c.so[0m
+[ 24%] Built target aruco_opencv_msgs__rosidl_generator_c
+[ 25%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 27%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 29%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 31%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 33%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 35%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/aruco_opencv_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/aruco_opencv_msgs/msg/board_pose__type_support.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/aruco_opencv_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/aruco_opencv_msgs/msg/aruco_detection__type_support.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/aruco_opencv_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/aruco_opencv_msgs/msg/marker_pose__type_support.cpp.o[0m
+[ 42%] [32mBuilding C object CMakeFiles/aruco_opencv_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aruco_opencv_msgs/msg/detail/aruco_detection__type_support.c.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/aruco_opencv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aruco_opencv_msgs/msg/aruco_detection__type_support.cpp.o[0m
+[ 46%] [32mBuilding CXX object CMakeFiles/aruco_opencv_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aruco_opencv_msgs/msg/detail/aruco_detection__type_support.cpp.o[0m
+[ 48%] [32mBuilding C object CMakeFiles/aruco_opencv_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aruco_opencv_msgs/msg/detail/board_pose__type_support.c.o[0m
+[ 50%] [32mBuilding C object CMakeFiles/aruco_opencv_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aruco_opencv_msgs/msg/detail/marker_pose__type_support.c.o[0m
+[ 51%] [32m[1mLinking CXX shared library libaruco_opencv_msgs__rosidl_typesupport_c.so[0m
+[ 53%] [32mBuilding CXX object CMakeFiles/aruco_opencv_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aruco_opencv_msgs/msg/detail/board_pose__type_support.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/aruco_opencv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aruco_opencv_msgs/msg/board_pose__type_support.cpp.o[0m
+[ 57%] [32m[1mLinking C shared library libaruco_opencv_msgs__rosidl_typesupport_introspection_c.so[0m
+[ 57%] Built target aruco_opencv_msgs__rosidl_typesupport_c
+[ 57%] Built target aruco_opencv_msgs__rosidl_typesupport_introspection_c
+[ 59%] [32mBuilding CXX object CMakeFiles/aruco_opencv_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aruco_opencv_msgs/msg/detail/aruco_detection__type_support_c.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/aruco_opencv_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aruco_opencv_msgs/msg/detail/board_pose__type_support_c.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/aruco_opencv_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aruco_opencv_msgs/msg/detail/marker_pose__type_support.cpp.o[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/aruco_opencv_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aruco_opencv_msgs/msg/detail/dds_fastrtps/aruco_detection__type_support.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/aruco_opencv_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aruco_opencv_msgs/msg/detail/marker_pose__type_support_c.cpp.o[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/aruco_opencv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aruco_opencv_msgs/msg/marker_pose__type_support.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/aruco_opencv_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aruco_opencv_msgs/msg/detail/dds_fastrtps/board_pose__type_support.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/aruco_opencv_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aruco_opencv_msgs/msg/detail/dds_fastrtps/marker_pose__type_support.cpp.o[0m
+[ 74%] [32m[1mLinking CXX shared library libaruco_opencv_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[ 74%] Built target aruco_opencv_msgs__rosidl_typesupport_introspection_cpp
+[ 75%] [32m[1mLinking CXX shared library libaruco_opencv_msgs__rosidl_typesupport_cpp.so[0m
+[ 75%] Built target aruco_opencv_msgs__rosidl_typesupport_cpp
+[ 77%] [32m[1mLinking CXX shared library libaruco_opencv_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[ 79%] [32m[1mLinking CXX shared library libaruco_opencv_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 79%] Built target aruco_opencv_msgs__rosidl_typesupport_fastrtps_c
+[ 79%] Built target aruco_opencv_msgs__rosidl_typesupport_fastrtps_cpp
+[ 79%] Built target aruco_opencv_msgs
+[ 81%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 81%] Built target aruco_opencv_msgs__py
+[ 85%] [32mBuilding C object CMakeFiles/aruco_opencv_msgs__rosidl_generator_py.dir/rosidl_generator_py/aruco_opencv_msgs/msg/_aruco_detection_s.c.o[0m
+[ 85%] [32mBuilding C object CMakeFiles/aruco_opencv_msgs__rosidl_generator_py.dir/rosidl_generator_py/aruco_opencv_msgs/msg/_board_pose_s.c.o[0m
+[ 87%] [32mBuilding C object CMakeFiles/aruco_opencv_msgs__rosidl_generator_py.dir/rosidl_generator_py/aruco_opencv_msgs/msg/_marker_pose_s.c.o[0m
+[ 88%] [32m[1mLinking C shared library libaruco_opencv_msgs__rosidl_generator_py.so[0m
+[ 88%] Built target aruco_opencv_msgs__rosidl_generator_py
+[ 90%] [32mBuilding C object CMakeFiles/aruco_opencv_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/aruco_opencv_msgs/_aruco_opencv_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 92%] [32mBuilding C object CMakeFiles/aruco_opencv_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/aruco_opencv_msgs/_aruco_opencv_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 94%] [32mBuilding C object CMakeFiles/aruco_opencv_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/aruco_opencv_msgs/_aruco_opencv_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[ 96%] [32m[1mLinking C shared module rosidl_generator_py/aruco_opencv_msgs/aruco_opencv_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[ 98%] [32m[1mLinking C shared module rosidl_generator_py/aruco_opencv_msgs/aruco_opencv_msgs_s__rosidl_typesupport_c.so[0m
+[ 98%] Built target aruco_opencv_msgs_s__rosidl_typesupport_introspection_c
+[100%] [32m[1mLinking C shared module rosidl_generator_py/aruco_opencv_msgs/aruco_opencv_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[100%] Built target aruco_opencv_msgs_s__rosidl_typesupport_c
+[100%] Built target aruco_opencv_msgs_s__rosidl_typesupport_fastrtps_c
+-- Install configuration: ""
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/ament_index/resource_index/rosidl_interfaces/aruco_opencv_msgs
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/msg/ArucoDetection.json
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/msg/BoardPose.json
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/msg/MarkerPose.json
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/marker_pose.h
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/board_pose.h
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/aruco_detection__description.c
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/aruco_detection__type_support.c
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/marker_pose__functions.c
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/board_pose__struct.h
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/board_pose__functions.h
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/board_pose__functions.c
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/marker_pose__struct.h
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/marker_pose__type_support.c
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/board_pose__type_support.h
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/aruco_detection__type_support.h
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/board_pose__description.c
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/marker_pose__description.c
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/marker_pose__functions.h
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/aruco_detection__functions.c
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/aruco_detection__functions.h
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/aruco_detection__struct.h
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/board_pose__type_support.c
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/marker_pose__type_support.h
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/aruco_detection.h
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/rosidl_generator_c__visibility_control.h
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/environment/library_path.sh
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/environment/library_path.dsv
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/libaruco_opencv_msgs__rosidl_generator_c.so
+-- Set non-toolchain portion of runtime path of "/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/libaruco_opencv_msgs__rosidl_generator_c.so" to ""
+-- Up-to-date: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs
+-- Up-to-date: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg
+-- Up-to-date: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/marker_pose__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/aruco_detection__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/board_pose__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/libaruco_opencv_msgs__rosidl_typesupport_fastrtps_c.so
+-- Set non-toolchain portion of runtime path of "/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/libaruco_opencv_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+-- Up-to-date: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs
+-- Up-to-date: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg
+-- Up-to-date: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/aruco_detection__type_support.c
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/aruco_detection__rosidl_typesupport_introspection_c.h
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/board_pose__rosidl_typesupport_introspection_c.h
+-- Up-to-date: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/marker_pose__type_support.c
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/marker_pose__rosidl_typesupport_introspection_c.h
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/board_pose__type_support.c
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/libaruco_opencv_msgs__rosidl_typesupport_introspection_c.so
+-- Set non-toolchain portion of runtime path of "/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/libaruco_opencv_msgs__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/libaruco_opencv_msgs__rosidl_typesupport_c.so
+-- Set non-toolchain portion of runtime path of "/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/libaruco_opencv_msgs__rosidl_typesupport_c.so" to ""
+-- Up-to-date: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs
+-- Up-to-date: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Up-to-date: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/aruco_detection__type_support.hpp
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/aruco_detection__builder.hpp
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/aruco_detection__struct.hpp
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/marker_pose__type_support.hpp
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/board_pose__builder.hpp
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/aruco_detection__traits.hpp
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/board_pose__traits.hpp
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/marker_pose__builder.hpp
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/marker_pose__struct.hpp
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/board_pose__struct.hpp
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/marker_pose__traits.hpp
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/board_pose__type_support.hpp
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/aruco_detection.hpp
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/marker_pose.hpp
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/board_pose.hpp
+-- Up-to-date: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs
+-- Up-to-date: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg
+-- Up-to-date: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/aruco_detection__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/dds_fastrtps
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/marker_pose__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/board_pose__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/libaruco_opencv_msgs__rosidl_typesupport_fastrtps_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/libaruco_opencv_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Up-to-date: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs
+-- Up-to-date: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg
+-- Up-to-date: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/marker_pose__type_support.cpp
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/aruco_detection__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/board_pose__type_support.cpp
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/aruco_detection__type_support.cpp
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/marker_pose__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/include/aruco_opencv_msgs/aruco_opencv_msgs/msg/detail/board_pose__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/libaruco_opencv_msgs__rosidl_typesupport_introspection_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/libaruco_opencv_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/libaruco_opencv_msgs__rosidl_typesupport_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/libaruco_opencv_msgs__rosidl_typesupport_cpp.so" to ""
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/environment/pythonpath.sh
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/environment/pythonpath.dsv
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages/aruco_opencv_msgs-6.0.2-py3.12.egg-info
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages/aruco_opencv_msgs-6.0.2-py3.12.egg-info/SOURCES.txt
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages/aruco_opencv_msgs-6.0.2-py3.12.egg-info/PKG-INFO
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages/aruco_opencv_msgs-6.0.2-py3.12.egg-info/dependency_links.txt
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages/aruco_opencv_msgs-6.0.2-py3.12.egg-info/top_level.txt
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages/aruco_opencv_msgs
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages/aruco_opencv_msgs/_aruco_opencv_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages/aruco_opencv_msgs/aruco_opencv_msgs_s__rosidl_typesupport_c.so
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages/aruco_opencv_msgs/aruco_opencv_msgs_s__rosidl_typesupport_fastrtps_c.so
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages/aruco_opencv_msgs/_aruco_opencv_msgs_s.ep.rosidl_typesupport_c.c
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages/aruco_opencv_msgs/_aruco_opencv_msgs_s.ep.rosidl_typesupport_introspection_c.c
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages/aruco_opencv_msgs/aruco_opencv_msgs_s__rosidl_typesupport_introspection_c.so
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages/aruco_opencv_msgs/msg
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages/aruco_opencv_msgs/msg/_board_pose_s.c
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages/aruco_opencv_msgs/msg/_board_pose.py
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages/aruco_opencv_msgs/msg/_aruco_detection.py
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages/aruco_opencv_msgs/msg/_aruco_detection_s.c
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages/aruco_opencv_msgs/msg/__init__.py
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages/aruco_opencv_msgs/msg/_marker_pose_s.c
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages/aruco_opencv_msgs/msg/_marker_pose.py
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages/aruco_opencv_msgs/__init__.py
+Listing '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages/aruco_opencv_msgs'...
+Compiling '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages/aruco_opencv_msgs/__init__.py'...
+Listing '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages/aruco_opencv_msgs/msg'...
+Compiling '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages/aruco_opencv_msgs/msg/__init__.py'...
+Compiling '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages/aruco_opencv_msgs/msg/_aruco_detection.py'...
+Compiling '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages/aruco_opencv_msgs/msg/_board_pose.py'...
+Compiling '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages/aruco_opencv_msgs/msg/_marker_pose.py'...
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages/aruco_opencv_msgs/aruco_opencv_msgs_s__rosidl_typesupport_fastrtps_c.so
+-- Set non-toolchain portion of runtime path of "/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages/aruco_opencv_msgs/aruco_opencv_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages/aruco_opencv_msgs/aruco_opencv_msgs_s__rosidl_typesupport_introspection_c.so
+-- Set non-toolchain portion of runtime path of "/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages/aruco_opencv_msgs/aruco_opencv_msgs_s__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages/aruco_opencv_msgs/aruco_opencv_msgs_s__rosidl_typesupport_c.so
+-- Set non-toolchain portion of runtime path of "/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/python3.12/site-packages/aruco_opencv_msgs/aruco_opencv_msgs_s__rosidl_typesupport_c.so" to ""
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/libaruco_opencv_msgs__rosidl_generator_py.so
+-- Set non-toolchain portion of runtime path of "/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/lib/libaruco_opencv_msgs__rosidl_generator_py.so" to ""
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/msg/ArucoDetection.idl
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/msg/BoardPose.idl
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/msg/MarkerPose.idl
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/msg/ArucoDetection.msg
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/msg/BoardPose.msg
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/msg/MarkerPose.msg
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/ament_index/resource_index/package_run_dependencies/aruco_opencv_msgs
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/ament_index/resource_index/parent_prefix_path/aruco_opencv_msgs
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/environment/ament_prefix_path.sh
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/environment/ament_prefix_path.dsv
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/environment/path.sh
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/environment/path.dsv
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/local_setup.bash
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/local_setup.sh
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/local_setup.zsh
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/local_setup.dsv
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/package.dsv
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/ament_index/resource_index/packages/aruco_opencv_msgs
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/cmake/export_aruco_opencv_msgs__rosidl_generator_cExport.cmake
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/cmake/export_aruco_opencv_msgs__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/cmake/export_aruco_opencv_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/cmake/export_aruco_opencv_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/cmake/aruco_opencv_msgs__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/cmake/aruco_opencv_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/cmake/aruco_opencv_msgs__rosidl_typesupport_cExport.cmake
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/cmake/aruco_opencv_msgs__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/cmake/export_aruco_opencv_msgs__rosidl_generator_cppExport.cmake
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/cmake/export_aruco_opencv_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/cmake/export_aruco_opencv_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/cmake/aruco_opencv_msgs__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/cmake/aruco_opencv_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/cmake/aruco_opencv_msgs__rosidl_typesupport_cppExport.cmake
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/cmake/aruco_opencv_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/cmake/export_aruco_opencv_msgs__rosidl_generator_pyExport.cmake
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/cmake/export_aruco_opencv_msgs__rosidl_generator_pyExport-noconfig.cmake
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/cmake/rosidl_cmake-extras.cmake
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/cmake/aruco_opencv_msgsConfig.cmake
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/cmake/aruco_opencv_msgsConfig-version.cmake
+-- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/aruco_opencv_msgs/share/aruco_opencv_msgs/package.xml

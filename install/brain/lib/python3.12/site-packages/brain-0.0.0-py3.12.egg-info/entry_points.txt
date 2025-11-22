@@ -1,2 +1,2 @@
 [console_scripts]
-logic_node = brain.logic:main
+logic_node = brain.logic_controller:main

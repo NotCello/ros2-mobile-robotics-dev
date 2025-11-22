@@ -1,0 +1,58 @@
+[0.297s] Invoking command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/erl1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/erl1 -DCMAKE_INSTALL_PREFIX=/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1
+[0.395s] -- The C compiler identification is GNU 13.3.0
+[0.507s] -- The CXX compiler identification is GNU 13.3.0
+[0.541s] -- Detecting C compiler ABI info
+[0.708s] -- Detecting C compiler ABI info - done
+[0.736s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.736s] -- Detecting C compile features
+[0.739s] -- Detecting C compile features - done
+[0.755s] -- Detecting CXX compiler ABI info
+[0.969s] -- Detecting CXX compiler ABI info - done
+[0.990s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.991s] -- Detecting CXX compile features
+[0.992s] -- Detecting CXX compile features - done
+[0.999s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.318s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.570s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.786s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.787s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.790s] -- Added test 'lint_cmake' to check CMake code style
+[1.792s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.799s] -- Added test 'xmllint' to check XML markup files
+[1.803s] -- Configuring done (1.5s)
+[1.809s] -- Generating done (0.0s)
+[1.812s] -- Build files have been written to: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/erl1
+[1.821s] Invoked command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/erl1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/erl1 -DCMAKE_INSTALL_PREFIX=/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1
+[1.822s] Invoking command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/erl1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/erl1 -- -j8 -l8
+[1.876s] Invoked command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/erl1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/erl1 -- -j8 -l8
+[1.877s] Invoking command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/erl1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/erl1
+[1.893s] -- Install configuration: ""
+[1.893s] -- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/launch
+[1.895s] -- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/launch/spawn_robot.launch.py
+[1.895s] -- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/launch/my_launch.py
+[1.895s] -- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/launch/rviz_launch.py
+[1.895s] -- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/worlds
+[1.897s] -- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/worlds/empty.sdf
+[1.897s] -- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/worlds/my_world.sdf
+[1.897s] -- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/rviz
+[1.898s] -- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/rviz/urdf.rviz
+[1.899s] -- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/urdf
+[1.899s] -- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/urdf/erl1.urdf
+[1.900s] -- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/urdf/erl1.gazebo
+[1.900s] -- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/meshes
+[1.900s] -- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/ament_index/resource_index/package_run_dependencies/erl1
+[1.902s] -- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/ament_index/resource_index/parent_prefix_path/erl1
+[1.902s] -- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/environment/ament_prefix_path.sh
+[1.903s] -- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/environment/ament_prefix_path.dsv
+[1.903s] -- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/environment/path.sh
+[1.903s] -- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/environment/path.dsv
+[1.904s] -- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/local_setup.bash
+[1.906s] -- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/local_setup.sh
+[1.907s] -- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/local_setup.zsh
+[1.907s] -- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/local_setup.dsv
+[1.908s] -- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/package.dsv
+[1.908s] -- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/ament_index/resource_index/packages/erl1
+[1.908s] -- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/cmake/erl1Config.cmake
+[1.908s] -- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/cmake/erl1Config-version.cmake
+[1.908s] -- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/erl1/share/erl1/package.xml
+[1.909s] Invoked command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/erl1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/erl1

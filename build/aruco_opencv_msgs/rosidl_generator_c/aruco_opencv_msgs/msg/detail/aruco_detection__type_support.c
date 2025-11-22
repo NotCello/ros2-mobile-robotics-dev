@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "aruco_opencv_msgs/msg/detail/aruco_detection__functions.h"
-#include "aruco_opencv_msgs/msg/detail/aruco_detection__type_support.h"
-#include "aruco_opencv_msgs/msg/detail/aruco_detection__struct.h"
 #include "rosidl_typesupport_interface/macros.h"
+#include "aruco_opencv_msgs/msg/detail/aruco_detection__struct.h"
+#include "aruco_opencv_msgs/msg/detail/aruco_detection__type_support.h"
+#include "aruco_opencv_msgs/msg/detail/aruco_detection__functions.h"
 
 #ifdef __cplusplus
 extern "C"

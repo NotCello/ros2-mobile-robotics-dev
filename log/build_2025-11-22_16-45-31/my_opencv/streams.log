@@ -1,0 +1,26 @@
+[0.329s] Invoking command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/my_opencv': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/my_opencv -- -j8 -l8
+[0.435s] [ 33%] Built target it_subscriber
+[0.442s] [ 66%] Built target it_modifier
+[0.442s] [100%] Built target image_subscriber
+[0.466s] Invoked command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/my_opencv' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/my_opencv -- -j8 -l8
+[0.467s] Invoking command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/my_opencv': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/my_opencv
+[0.497s] -- Install configuration: ""
+[0.497s] -- Up-to-date: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/lib/my_opencv/image_subscriber
+[0.499s] -- Up-to-date: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/lib/my_opencv/it_subscriber
+[0.499s] -- Up-to-date: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/lib/my_opencv/it_modifier
+[0.500s] -- Up-to-date: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/share/ament_index/resource_index/package_run_dependencies/my_opencv
+[0.500s] -- Up-to-date: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/share/ament_index/resource_index/parent_prefix_path/my_opencv
+[0.501s] -- Up-to-date: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/share/my_opencv/environment/ament_prefix_path.sh
+[0.501s] -- Up-to-date: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/share/my_opencv/environment/ament_prefix_path.dsv
+[0.501s] -- Up-to-date: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/share/my_opencv/environment/path.sh
+[0.501s] -- Up-to-date: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/share/my_opencv/environment/path.dsv
+[0.501s] -- Up-to-date: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/share/my_opencv/local_setup.bash
+[0.502s] -- Up-to-date: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/share/my_opencv/local_setup.sh
+[0.502s] -- Up-to-date: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/share/my_opencv/local_setup.zsh
+[0.502s] -- Up-to-date: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/share/my_opencv/local_setup.dsv
+[0.502s] -- Installing: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/share/my_opencv/package.dsv
+[0.502s] -- Up-to-date: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/share/ament_index/resource_index/packages/my_opencv
+[0.502s] -- Up-to-date: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/share/my_opencv/cmake/my_opencvConfig.cmake
+[0.502s] -- Up-to-date: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/share/my_opencv/cmake/my_opencvConfig-version.cmake
+[0.505s] -- Up-to-date: /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/my_opencv/share/my_opencv/package.xml
+[0.510s] Invoked command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/my_opencv' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/install/brain:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/build/my_opencv

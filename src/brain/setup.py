@@ -1,30 +1,31 @@
-from setuptools import find_packages, setup
+from setuptools import setup
+import os
+from glob import glob
 
 package_name = 'brain'
 
 setup(
     name=package_name,
     version='0.0.0',
-    packages=find_packages(exclude=['test']),
+    packages=[package_name],
     data_files=[
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        # Ensure launch files are installed
+        (os.path.join('share', package_name, 'launch'), glob('launch/*.launch.py')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='utente',
-    maintainer_email='marcello12ori@gmail.com',
-    description='TODO: Package description',
+    maintainer_email='user@todo.todo',
+    description='Logic package for assignment',
     license='TODO: License declaration',
-    extras_require={
-        'test': [
-            'pytest',
-        ],
-    },
+    tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'logic_node = brain.logic:main',
+            'logic_node = brain.logic_controller:main',
+            
         ],
     },
 )
