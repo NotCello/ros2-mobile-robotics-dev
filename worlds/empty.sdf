@@ -1,0 +1,128 @@
+<sdf version='1.10'>
+  <world name='empty'>
+    <physics name='1ms' type='ignored'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    <plugin name='gz::sim::systems::Physics' filename='gz-sim-physics-system'/>
+    <plugin name='gz::sim::systems::UserCommands' filename='gz-sim-user-commands-system'/>
+    <plugin name='gz::sim::systems::SceneBroadcaster' filename='gz-sim-scene-broadcaster-system'/>
+    <plugin name='gz::sim::systems::Contact' filename='gz-sim-contact-system'/>
+    <plugin name='gz::sim::systems::Sensors' filename='gz-sim-sensors-system'/>
+    <plugin name='gz::sim::systems::Imu' filename='gz-sim-imu-system'/>
+    <plugin name='gz::sim::systems::NavSat' filename='gz-sim-navsat-system'/>
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <world_frame_orientation>ENU</world_frame_orientation>
+      <latitude_deg>44.403373000000002</latitude_deg>
+      <longitude_deg>8.9481067999999997</longitude_deg>
+      <elevation>0</elevation>
+      <heading_deg>0</heading_deg>
+    </spherical_coordinates>
+    <gravity>0 0 -9.8000000000000007</gravity>
+    <magnetic_field>5.5644999999999998e-06 2.2875799999999999e-05 -4.2388400000000002e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <scene>
+      <ambient>0.400000006 0.400000006 0.400000006 1</ambient>
+      <background>0.699999988 0.699999988 0.699999988 1</background>
+      <shadows>true</shadows>
+    </scene>
+    <model name='ground_plane'>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>50</mu>
+              </ode>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.800000012 0.800000012 0.800000012 1</ambient>
+            <diffuse>0.800000012 0.800000012 0.800000012 1</diffuse>
+            <specular>0.800000012 0.800000012 0.800000012 1</specular>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>0 0 0 0 0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+    <include>
+      <uri>file:////home/utente/gazebo_models/aruco_box</uri>
+      <name>aruco_box</name>
+      <pose>1.3683619499206539 -2.4974465370178218 0.24999999995712521 -1.8732968143136815e-21 -1.0442071421022159e-21 0.83826299767070878</pose>
+    </include>
+    <include>
+      <uri>file:////home/utente/gazebo_models/aruco_box</uri>
+      <name>aruco_box_1</name>
+      <pose>1.5704368352890015 -0.36540091037750233 0.24999999995712521 -3.535673711502877e-21 -6.6691817024743559e-22 0.18123703290442159</pose>
+    </include>
+    <include>
+      <uri>file:////home/utente/gazebo_models/aruco_box</uri>
+      <name>aruco_box_2</name>
+      <pose>-0.050301603972911835 0.80641657114028931 0.24999901156305956 1.4039165307829767e-21 -2.3878695121514751e-21 0.13834603433541748</pose>
+    </include>
+    <include>
+      <uri>file:////home/utente/gazebo_models/aruco_box</uri>
+      <name>aruco_box_3</name>
+      <pose>-0.47107705473899819 -2.6397693157196045 0.24999924061797243 -3.8472375669660293e-19 3.6754549826289256e-19 1.1110300150247343</pose>
+    </include>
+    <include>
+      <uri>file:////home/utente/gazebo_models/aruco_box</uri>
+      <name>aruco_box_4</name>
+      <pose>-1.7999462633996781 -1.1327949762359115 0.24999911791273036 1.5707968633681397 -1.0574319198042303e-12 1.5708000222828804</pose>
+    </include>
+    
+    <light name='sun' type='directional'>
+      <pose>0 0 10 0 0 0</pose>
+      <cast_shadows>true</cast_shadows>
+      <intensity>1</intensity>
+      <direction>-0.5 0.10000000000000001 -0.90000000000000002</direction>
+      <diffuse>0.800000012 0.800000012 0.800000012 1</diffuse>
+      <specular>0.200000003 0.200000003 0.200000003 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <linear>0.01</linear>
+        <constant>0.90000000000000002</constant>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+  </world>
+</sdf>
