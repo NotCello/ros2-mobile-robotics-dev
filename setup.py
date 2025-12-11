@@ -36,6 +36,7 @@ setup(
             'logic_controller = brain.logic_node:main',
             'test = brain.test:main',
             'real_robot = brain.real_robot:main',
+            'simulation = brain.simulation:main',
             
         ],
     },
