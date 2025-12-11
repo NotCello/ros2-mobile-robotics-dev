@@ -32,7 +32,15 @@ setup(
     },
     entry_points={
         'console_scripts': [
+
             'brain_node = brain.brain_node:main',
+
+            
+            'logic_controller = brain.logic_controller:main',
+            'test = brain.test:main',
+            'real_robot = brain.real_robot:main',
+            
+
         ],
     },
 )
