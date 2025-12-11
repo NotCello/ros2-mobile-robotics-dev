@@ -34,8 +34,8 @@ setup(
         'console_scripts': [
             
             'logic_controller = brain.logic_node:main',
-            'lollino = brain.lollino:main',
-            'pol=brain.pol:main',
+            'test = brain.test:main',
+            'real_robot = brain.real_robot:main',
             
         ],
     },
