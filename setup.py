@@ -32,7 +32,11 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'brain_node = brain.brain_node:main',
+            
+            'logic_controller = brain.logic_node:main',
+            'lollino = brain.lollino:main',
+            'pol=brain.pol:main',
+            
         ],
     },
 )

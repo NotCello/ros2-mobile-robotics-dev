@@ -1,0 +1,352 @@
+#!/usr/bin/env python3
+
+import rclpy
+from rclpy.node import Node
+from geometry_msgs.msg import Twist
+from sensor_msgs.msg import Image
+from sensor_msgs.msg import CompressedImage
+from cv_bridge import CvBridge
+from nav_msgs.msg import Odometry
+from tf_transformations import euler_from_quaternion
+import cv2
+import cv2.aruco as aruco
+import math
+from collections import deque
+
+
+class DetectArucoNode(Node):
+    """
+    ROS2 node to detect ArUco markers and sequentially center the robot on each marker.
+
+    Workflow:
+    1. Rotate to detect all markers and store their approximate angles.
+    2. Sequentially rotate to center each marker in the camera image and publish an annotated image.
+    3. Stop briefly after each marker before moving to the next.
+    """
+    def __init__(self):
+        super().__init__('detect_aruco_node')
+        
+        self.cmd_vel_pub = self.create_publisher(Twist, '/cmd_vel', 10)
+        self.image_pub = self.create_publisher(Image, '/aruco_centered_image', 10)
+
+        self.create_subscription(Odometry, '/odom', self.odom_callback, 10)
+        #self.create_subscription(Image, '/camera/image', self.image_callback, 10)
+        #self.create_subscription(CompressedImage, '/camera/image/compressed', self.image_callback, 10)
+        self.create_subscription(CompressedImage, '/camera/rgb/image_raw/compressed', self.image_callback, 10)
+
+        self.bridge = CvBridge()
+        self.aruco_dict = aruco.Dictionary_get(aruco.DICT_ARUCO_ORIGINAL)
+        self.aruco_params = aruco.DetectorParameters_create()
+
+        # Odometry
+        self.current_yaw = 0.0
+        self.yaw_received = False
+
+        # State machine: "rotating" -> "centering" -> "done"
+        self.state = "rotating"
+        
+        # Rotation
+        self.angular_speed = 0.2
+        self.total_rotated = 0.0
+        self.prev_yaw = 0.0
+        
+        # Markers found during rotation
+        self.detected_ids = set()
+        self.marker_angles = {}  # Store angular position of each marker
+        self.marker_scores = {}
+        self.target_list = []
+        
+        # Current image
+        self.current_image = None
+        self.current_target = None
+        self.last_published_id = None
+        self.pause_timer = None
+        
+        self.center_history = deque(maxlen=5)   # smoothing buffer for cx
+        self.REQUIRED_CONSECUTIVE = 3           # frames required to confirm centered
+        self.centered_counts = {}               # counts per marker id
+        self.controller_gain = 0.0005           # P gain
+        self.max_angular = 0.15                 # clamp for angular speed (rad/s)
+        self.center_deadband = 20               # pixels tolerance
+
+        self.get_logger().info("Waiting for odometry...")
+        while not self.yaw_received:
+            rclpy.spin_once(self, timeout_sec=0.1)
+
+        self.get_logger().info("Starting 360° rotation")
+        
+        # Create FSM timer to handle state updates
+        self.fsm_timer = self.create_timer(0.1, self.update_fsm)
+    
+    ##############################################################
+    # Callbacks
+    ##############################################################
+    def odom_callback(self, msg: Odometry):
+        """
+        Update current yaw from odometry message.
+        """
+        orientation_q = msg.pose.pose.orientation
+        _, _, yaw = euler_from_quaternion(
+            [orientation_q.x, orientation_q.y, orientation_q.z, orientation_q.w])
+        self.current_yaw = yaw
+        self.yaw_received = True
+        
+    def image_callback(self, msg):
+        """
+        Processes camera images. 
+        """
+        try:
+            # self.current_image = self.bridge.imgmsg_to_cv2(msg, "bgr8")
+            self.current_image = self.bridge.compressed_imgmsg_to_cv2(msg, "bgr8")
+        except Exception as e:
+            self.get_logger().warn(f"cv_bridge conversion failed: {e}")
+            return
+    
+    #############################################################
+    # Finite State Machine (FSM) Methods
+    #############################################################
+    def update_fsm(self):
+        """
+        FSM timer callback.
+        """
+        if self.state == "rotating":
+            self.update_rotating_state()
+        elif self.state == "centering":
+            self.update_centering_state()
+        elif self.state == "done":
+            self.update_done_state()
+
+    def update_rotating_state(self):
+        """
+        Handle rotation phase: detect markers and rotate until complete.
+        """
+        # Detect markers in current image
+        if self.current_image is not None:
+            self.detect_markers()
+        
+        # Early exit if all markers found
+        if len(self.detected_ids) == 5:
+            self.get_logger().info(f"All 5 markers found! Stopping rotation early.")
+            self.stop_rotation()
+            return
+        
+        twist = Twist()
+        twist.angular.z = self.angular_speed
+        self.cmd_vel_pub.publish(twist)
+        
+        # Accumulate rotation
+        delta_yaw = self.current_yaw - self.prev_yaw
+        delta_yaw = (delta_yaw + math.pi) % (2 * math.pi) - math.pi
+        self.total_rotated += abs(delta_yaw)
+        self.prev_yaw = self.current_yaw
+
+    def update_centering_state(self):
+        """
+        Handle centering phase: track and center current marker.
+        Skip if in pause after centering.
+        """
+        if self.pause_timer is not None:
+            return
+        
+        if self.current_image is not None:
+            self.track_and_center_current_marker()
+
+    def update_done_state(self):
+        """
+        Handle done phase: stop all motion.
+        """
+        self.cmd_vel_pub.publish(Twist())
+        
+    ##############################################################
+    # Helper Methods
+    ##############################################################
+    def stop_rotation(self):
+        """
+        Stops rotation and transitions to centering phase.
+        """
+        self.cmd_vel_pub.publish(Twist())
+        
+        # Transition to centering phase
+        self.target_list = sorted(list(self.detected_ids))
+        if self.target_list:
+            self.state = "centering"
+            self.current_target = self.target_list.pop(0)
+            self.get_logger().info(f"Starting centering phase. First target: {self.current_target}")
+        else:
+            self.get_logger().error("No markers found!")
+            self.state = "done"
+    
+    def detect_markers(self):
+        """
+        Rileva i marker e salva l'angolo SOLO se il marker è ben centrato.
+        """
+        if self.current_image is None:
+            return
+
+        gray = cv2.cvtColor(self.current_image, cv2.COLOR_BGR2GRAY)
+        corners, ids, _ = aruco.detectMarkers(gray, self.aruco_dict, parameters=self.aruco_params)
+        
+        img_center_x = gray.shape[1] / 2.0
+
+        if ids is not None:
+            ids_flat = ids.flatten()
+            for i, m_id in enumerate(ids_flat):
+                if m_id in [10, 12, 14, 16, 18]: # Filtra solo i marker desiderati
+                    
+                    # Calcola il centro del marker nell'immagine
+                    c = corners[i][0]
+                    cx = c[:, 0].mean()
+                    
+                    # Calcola quanto è distante dal centro dell'immagine (score più basso = migliore)
+                    dist_from_center = abs(cx - img_center_x)
+                    
+                    # Se è la prima volta che lo vediamo, o se questo rilevamento è più centrale del precedente:
+                    current_score = self.marker_scores.get(m_id, float('inf'))
+                    
+                    if dist_from_center < current_score:
+                        self.marker_scores[m_id] = dist_from_center
+                        self.marker_angles[m_id] = self.current_yaw
+                        self.detected_ids.add(m_id)
+                        # Logghiamo solo se c'è un miglioramento significativo per non intasare la console
+                        self.get_logger().info(f"Updated marker {m_id} pose. Score: {dist_from_center:.1f}")
+
+    def get_angular_error_to_marker(self, marker_id):
+        """
+        Calculate shortest angular distance to marker's known position.
+        """
+        target_angle = self.marker_angles.get(marker_id, self.current_yaw)
+        error = target_angle - self.current_yaw
+        # Normalize to [-pi, pi]
+        error = (error + math.pi) % (2 * math.pi) - math.pi
+        return error
+
+    def track_and_center_current_marker(self):
+            if self.current_image is None:
+                return
+
+            gray = cv2.cvtColor(self.current_image, cv2.COLOR_BGR2GRAY)
+            corners, ids, _ = aruco.detectMarkers(gray, self.aruco_dict, parameters=self.aruco_params)
+
+            # FASE 1: IL MARKER NON È VISIBILE (Ricerca basata su Odometria)
+            if ids is None or self.current_target not in ids.flatten():
+                angle_error = self.get_angular_error_to_marker(self.current_target)
+                
+                twist = Twist()
+                search_gain = 2.0  
+                cmd_vel = search_gain * angle_error
+                
+                min_scan_speed = 0.2  # Aumentato leggermente per sicurezza
+                
+                # Logica Anti-Stallo:
+                # Se la velocità calcolata è troppo bassa (siamo arrivati ma non vediamo nulla),
+                # forziamo una rotazione minima.
+                if abs(cmd_vel) < min_scan_speed:
+                    # Se l'errore è esattamente 0 (o piccolissimo), forziamo una direzione (es. sinistra)
+                    if angle_error >= 0:
+                        cmd_vel = min_scan_speed
+                    else:
+                        cmd_vel = -min_scan_speed
+
+                twist.angular.z = cmd_vel
+                # Clamp velocità massima
+                twist.angular.z = max(min(twist.angular.z, self.angular_speed), -self.angular_speed)
+                
+                self.cmd_vel_pub.publish(twist)
+                self.center_history.clear()
+                return
+
+            # ---------------------------------------------------------
+            # FASE 2: IL MARKER È VISIBILE (Centraggio Visivo)
+            # ---------------------------------------------------------
+            ids_flat = ids.flatten()
+            idxs = [i for i, val in enumerate(ids_flat) if val == self.current_target]
+            
+            # (Il resto della tua funzione rimane uguale...)
+            if not idxs:
+                # Caso raro di incongruenza, gestito come sopra
+                return
+
+            idx = idxs[0]
+            pts = corners[idx][0] 
+
+            img_w = gray.shape[1]
+            cx = float(pts[:, 0].mean())
+            self.center_history.append(cx)
+            smooth_cx = sum(self.center_history) / len(self.center_history)
+
+            error_x = smooth_cx - (img_w / 2)
+
+            twist = Twist()
+            twist.angular.z = -self.controller_gain * error_x
+            twist.angular.z = max(min(twist.angular.z, self.max_angular), -self.max_angular)
+            self.cmd_vel_pub.publish(twist)
+
+            if abs(error_x) < self.center_deadband:
+                self.centered_counts[self.current_target] = self.centered_counts.get(self.current_target, 0) + 1
+            else:
+                self.centered_counts[self.current_target] = 0
+
+            if self.centered_counts[self.current_target] >= self.REQUIRED_CONSECUTIVE:
+                if self.last_published_id != self.current_target:
+                    self.publish_centered_image(pts)
+                    self.last_published_id = self.current_target
+
+                self.cmd_vel_pub.publish(Twist())
+                self.centered_counts[self.current_target] = 0
+                self.center_history.clear()
+                self.pause_timer = self.create_timer(2.0, self.advance_to_next_marker)
+
+
+    def advance_to_next_marker(self):
+        """
+        Timer callback after centering a marker; moves to next marker or finishes.
+        """
+        self.pause_timer.cancel()
+        self.pause_timer = None
+        
+        if self.target_list:
+            self.current_target = self.target_list.pop(0)
+            self.get_logger().info(f"Next marker: {self.current_target}")
+        else:
+            self.get_logger().info("All markers processed. Complete.")
+            self.state = "done"
+
+    def publish_centered_image(self, pts):
+        """
+        Draws and publishes an image with:
+        - Circle passing through all 4 marker corners
+        - Marker ID label
+        """
+        out = self.current_image.copy()
+
+        # Compute center of marker
+        center = pts.mean(axis=0)
+        cx, cy = int(center[0]), int(center[1])
+
+        # Compute radius so circle covers all 4 corners
+        dists = [math.dist((cx, cy), (p[0], p[1])) for p in pts]
+        radius = int(max(dists))
+
+        # Draw circle around marker
+        cv2.circle(out, (cx, cy), radius, (0, 0, 255), 2)
+
+        # Write marker ID on image
+        text = f"MarkerID = {self.current_target}"
+        cv2.putText(out, text, (10, 40), cv2.FONT_HERSHEY_SIMPLEX, 1.2, (0, 255, 0), 3, cv2.LINE_AA)
+
+        # Publish image
+        msg = self.bridge.cv2_to_imgmsg(out, encoding="bgr8")
+        self.image_pub.publish(msg)
+        self.get_logger().info(f"Published centered image for marker {self.current_target}")
+
+    
+def main(args=None):
+    rclpy.init(args=args)
+    node = DetectArucoNode()
+    rclpy.spin(node)
+    node.destroy_node()
+    rclpy.shutdown()
+
+
+if __name__ == "__main__":
+    main()
