@@ -17,7 +17,7 @@ class BrainNode(Node):
         # Configuration
         self.EXPECTED_MARKERS = 5
         self.ROTATION_SPEED = 0.4
-        self.CENTER_THRESHOLD = 10
+        self.CENTER_THRESHOLD = 20
         
         # State variables
         self.cv_image = None
@@ -71,35 +71,27 @@ class BrainNode(Node):
         return results
 
     def perform_task(self):
-        # 1. WAIT FOR ODOM (CRITICAL STEP)
-        # We cannot calculate rotation if self.yaw is None
+        # 1. WAIT FOR ODOM
         while self.yaw is None and rclpy.ok():
             self.get_logger().info("Waiting for sensors...", throttle_duration_sec=2)
             rclpy.spin_once(self, timeout_sec=1)
 
-        if self.yaw is None: return # Safety check
+        if self.yaw is None: return
 
-        # 2. ROTATION PHASE
+        # 2. ROTATION PHASE (SCANNING)
         self.get_logger().info("Starting 360 scan...")
         cmd = Twist()
         cmd.angular.z = self.ROTATION_SPEED
         
-        turned_angle = 0.0
         last_yaw = self.yaw
-        
-        # Spin until we find ALL markers OR a timeout is reached
         start_time = time.time()
-        MAX_SPIN_TIME = 60.0
-
-        while len(self.detected_markers) < self.EXPECTED_MARKERS and (time.time() - start_time) < MAX_SPIN_TIME and rclpy.ok():
+        
+        while len(self.detected_markers) < self.EXPECTED_MARKERS and (time.time() - start_time) < 60.0 and rclpy.ok():
             self.vel_pub.publish(cmd)
             rclpy.spin_once(self, timeout_sec=0.01)
             
-            # Check if yaw is still valid
             if self.yaw is not None:
                 current_yaw = self.yaw
-                delta = self.normalize_angle(current_yaw - last_yaw)
-                turned_angle += delta
                 last_yaw = current_yaw
 
             detections = self.detect_markers_in_current_frame()
@@ -108,8 +100,9 @@ class BrainNode(Node):
                     self.get_logger().info(f"Found new marker: {mid}")
                     self.detected_markers[mid] = self.yaw 
 
-        self.vel_pub.publish(Twist()) # Stop
+        self.vel_pub.publish(Twist()) # Stop scanning
         self.get_logger().info(f"Scan Complete. Found: {sorted(self.detected_markers.keys())}")
+        time.sleep(1.0) # Let physics settle
         
         # 3. ALIGNMENT PHASE
         sorted_ids = sorted(self.detected_markers.keys())
@@ -117,21 +110,36 @@ class BrainNode(Node):
         for target_id in sorted_ids:
             self.get_logger().info(f"Approaching Marker {target_id}...")
             
-            # Coarse Align
+            # --- PHASE 3A: COARSE ALIGN ---
             target_yaw = self.detected_markers[target_id]
             while rclpy.ok():
                 rclpy.spin_once(self, timeout_sec=0.01)
                 if self.yaw is None: continue
 
                 error_yaw = self.normalize_angle(target_yaw - self.yaw)
-                if abs(error_yaw) < 0.2: break
                 
+                # IMPROVEMENT: Tighter threshold (0.2 -> 0.1)
+                if abs(error_yaw) < 0.1: 
+                    self.vel_pub.publish(Twist()) # Stop before fine align
+                    time.sleep(0.5) 
+                    break
+                
+                # Proportional control for coarse align
                 cmd.angular.z = 0.5 * error_yaw
                 self.vel_pub.publish(cmd)
 
-            # Fine Align
+            # --- PHASE 3B: FINE ALIGN ---
             self.get_logger().info(f"Fine aligning marker {target_id}...")
+            
+            # Safety counter: if we oscillate too long, just stop
+            alignment_start_time = time.time()
+            
             while rclpy.ok():
+                # Timeout safety: If we can't align in 10 seconds, give up and shoot
+                if (time.time() - alignment_start_time) > 10.0:
+                     self.get_logger().warn(f"Alignment timed out for {target_id}")
+                     break
+
                 rclpy.spin_once(self, timeout_sec=0.01)
                 detections = self.detect_markers_in_current_frame()
                 target_data = next((d for d in detections if d[0] == target_id), None)
@@ -141,31 +149,50 @@ class BrainNode(Node):
                     h, w, _ = self.cv_image.shape
                     error_x = (w / 2) - cx
                     
-                    cmd.angular.z = 0.003 * error_x
-                    self.vel_pub.publish(cmd)
-                    
-                    if abs(error_x) < self.CENTER_THRESHOLD:
-                        self.vel_pub.publish(Twist())
+                    # 1. CHECK THRESHOLD FIRST (Exit condition)
+                    # We use 15 pixels as a balanced threshold
+                    if abs(error_x) < 15:
+                        self.vel_pub.publish(Twist()) # Hard Stop
                         self.get_logger().info(f"Marker {target_id} Centered!")
                         
-                        # DRAW
+                        # DRAW and PUBLISH
                         import cv2 
                         c = corners[0]
                         center = (int(np.mean(c[:, 0])), int(np.mean(c[:, 1])))
                         cv2.circle(self.cv_image, center, 50, (0, 255, 0), 3)
-                        cv2.putText(self.cv_image, f"ID {target_id}", center, cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
-                        
                         out_msg = self.bridge.cv2_to_imgmsg(self.cv_image, encoding='bgr8')
                         self.img_pub.publish(out_msg)
                         time.sleep(2)
                         break
+
+                    # 2. CALCULATE SPEED (Robust P-Controller)
+                    Kp = 0.002  # Reverted to stronger gain
+                    angular_z = Kp * error_x
+                    
+                    # 3. APPLY LIMITS (Min/Max Speed)
+                    # Max speed: 0.15 (prevent shooting past)
+                    # Min speed: 0.05 (prevent stalling/stiction)
+                    if abs(angular_z) > 0.15:
+                        angular_z = math.copysign(0.15, angular_z)
+                    elif abs(angular_z) < 0.05:
+                        angular_z = math.copysign(0.05, angular_z)
+                    
+                    cmd.angular.z = angular_z
+                    self.vel_pub.publish(cmd)
+                    
                 else:
-                    cmd.angular.z = 0.2
+                    # Smart Search Fallback
+                    # Reduced speed to 0.05 to match the fine-align minimum speed
+                    if self.yaw is not None:
+                        error_yaw = self.normalize_angle(target_yaw - self.yaw)
+                        cmd.angular.z = math.copysign(0.05, error_yaw)
+                    else:
+                        cmd.angular.z = 0.05
+                    
                     self.vel_pub.publish(cmd)
 
         self.get_logger().info("Task Finished.")
         self.vel_pub.publish(Twist())
-        
         while rclpy.ok():
             time.sleep(1)
 
