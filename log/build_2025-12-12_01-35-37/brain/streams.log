@@ -1,0 +1,57 @@
+[0.702s] Invoking command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/build/brain/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/install/brain/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/brain build --build-base /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/build/brain/build install --record /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/build/brain/install.log --single-version-externally-managed install_data
+[0.936s] running egg_info
+[0.937s] creating build/brain/brain.egg-info
+[0.954s] writing build/brain/brain.egg-info/PKG-INFO
+[0.954s] writing dependency_links to build/brain/brain.egg-info/dependency_links.txt
+[0.954s] writing entry points to build/brain/brain.egg-info/entry_points.txt
+[0.954s] writing requirements to build/brain/brain.egg-info/requires.txt
+[0.955s] writing top-level names to build/brain/brain.egg-info/top_level.txt
+[0.955s] writing manifest file 'build/brain/brain.egg-info/SOURCES.txt'
+[0.991s] reading manifest file 'build/brain/brain.egg-info/SOURCES.txt'
+[0.992s] writing manifest file 'build/brain/brain.egg-info/SOURCES.txt'
+[0.992s] running build
+[0.992s] running build_py
+[0.992s] creating /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/build/brain/build
+[0.992s] creating /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/build/brain/build/lib
+[0.992s] creating /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/build/brain/build/lib/brain
+[0.992s] copying brain/logic_controller.py -> /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/build/brain/build/lib/brain
+[0.992s] copying brain/__init__.py -> /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/build/brain/build/lib/brain
+[0.992s] running install
+[0.998s] running install_lib
+[1.017s] creating /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/install/brain/lib/python3.12/site-packages/brain
+[1.017s] copying /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/build/brain/build/lib/brain/logic_controller.py -> /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/install/brain/lib/python3.12/site-packages/brain
+[1.017s] copying /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/build/brain/build/lib/brain/__init__.py -> /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/install/brain/lib/python3.12/site-packages/brain
+[1.018s] byte-compiling /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/install/brain/lib/python3.12/site-packages/brain/logic_controller.py to logic_controller.cpython-312.pyc
+[1.019s] byte-compiling /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/install/brain/lib/python3.12/site-packages/brain/__init__.py to __init__.cpython-312.pyc
+[1.019s] running install_data
+[1.020s] creating /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/install/brain/share/ament_index
+[1.020s] creating /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/install/brain/share/ament_index/resource_index
+[1.020s] creating /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/install/brain/share/ament_index/resource_index/packages
+[1.020s] copying resource/brain -> /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/install/brain/share/ament_index/resource_index/packages
+[1.020s] copying package.xml -> /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/install/brain/share/brain
+[1.020s] creating /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/install/brain/share/brain/launch
+[1.020s] copying launch/spawn_robot.launch.py -> /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/install/brain/share/brain/launch
+[1.020s] copying launch/display.launch.py -> /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/install/brain/share/brain/launch
+[1.020s] creating /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/install/brain/share/brain/urdf
+[1.020s] copying urdf/erl1.urdf -> /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/install/brain/share/brain/urdf
+[1.021s] copying urdf/erl1.gazebo -> /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/install/brain/share/brain/urdf
+[1.021s] copying urdf/mogi_bot_skid_steer.gazebo -> /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/install/brain/share/brain/urdf
+[1.021s] copying urdf/materials.xacro -> /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/install/brain/share/brain/urdf
+[1.021s] copying urdf/mogi_bot_skid_steer.urdf -> /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/install/brain/share/brain/urdf
+[1.021s] creating /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/install/brain/share/brain/worlds
+[1.021s] copying worlds/empty.sdf -> /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/install/brain/share/brain/worlds
+[1.022s] copying worlds/my_world.sdf -> /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/install/brain/share/brain/worlds
+[1.022s] copying worlds/building_robot.sdf -> /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/install/brain/share/brain/worlds
+[1.022s] creating /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/install/brain/share/brain/meshes
+[1.022s] copying meshes/wheel.dae -> /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/install/brain/share/brain/meshes
+[1.023s] copying meshes/lidar.dae -> /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/install/brain/share/brain/meshes
+[1.024s] copying meshes/mogi_bot.dae -> /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/install/brain/share/brain/meshes
+[1.024s] creating /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/install/brain/share/brain/rviz
+[1.025s] copying rviz/urdf.rviz -> /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/install/brain/share/brain/rviz
+[1.025s] copying rviz/rviz.rviz -> /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/install/brain/share/brain/rviz
+[1.025s] running install_egg_info
+[1.042s] Copying build/brain/brain.egg-info to /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/install/brain/lib/python3.12/site-packages/brain-0.0.0-py3.12.egg-info
+[1.043s] running install_scripts
+[1.161s] Installing logic_controller script to /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/install/brain/lib/brain
+[1.161s] writing list of installed files to '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/build/brain/install.log'
+[1.189s] Invoked command in '/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/build/brain/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/install/brain/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/brain build --build-base /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/build/brain/build install --record /home/utente/Documenti/Magistrale/SecondoAnno/EXP_RO/EXP_Ws/src/brain/build/brain/install.log --single-version-externally-managed install_data

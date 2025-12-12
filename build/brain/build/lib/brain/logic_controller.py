@@ -33,7 +33,7 @@ class BrainNode(Node):
         self.create_subscription(Image, '/camera/image', self.image_callback, 10)
         
         # PUBLISHERS
-        self.vel_pub = self.create_publisher(Twist, '/cmd_vel', 10)
+        self.vel_pub = self.create_publisher(Twist, '/cmd_vel', 0.1)
         self.img_pub = self.create_publisher(Image, '/assignment1/result_image', 10)
 
         self.get_logger().info("Brain Node Initialized.")

@@ -1,0 +1,2 @@
+[console_scripts]
+logic_controller = brain.logic_controller:main
